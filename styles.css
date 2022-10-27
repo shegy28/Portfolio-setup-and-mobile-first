@@ -5,11 +5,10 @@ body {
 }
 
 .head-container {
-  margin-top: 20px;  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 15px 20px;
+  margin: 20px 20px;
   align-items: center;
 }
 
@@ -23,7 +22,7 @@ img {
 }
 
 .logo a {
-  color: #6070FF;
+  color: #6070ff;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   text-decoration: none;
@@ -40,7 +39,7 @@ img {
 }
 
 .wrapper {
-  margin:0 22px;
+  margin: 0 22px;
 }
 
 .socials p {
@@ -56,7 +55,7 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  color: #172B4D;;
+  color: #172b4d;
 }
 
 .info {
@@ -65,13 +64,13 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .icons {
   border: none;
   outline: none;
-  background-color: white; 
+  background-color: white;
   width: 190.17px;
   height: 20px;
   margin-top: -10px;
@@ -81,7 +80,7 @@ img {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-between;
   margin-left: -42px;
   margin-top: -10px;
 }
