@@ -51,6 +51,17 @@ img {
   margin: 0 22px;
 }
 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #253858;
+}
+
 .socials h4 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -320,17 +331,6 @@ img {
 .skill-list {
   padding: 0;
   list-style: none;
-}
-
-h4 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #253858;
 }
 
 .direction {
