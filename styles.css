@@ -355,3 +355,15 @@ form ul {
   list-style: none;
   padding: 0;
 }
+
+.form-holder{
+	display: flex;
+	margin: 0 24px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
+
