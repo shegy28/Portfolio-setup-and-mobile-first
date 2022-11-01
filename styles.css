@@ -362,7 +362,19 @@ form ul {
 	display: flex;
 	flex-direction: column;
 }
+.form-holder h1 {
+	font-family: 'Poppins', 'sans-serif';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 52px;
 
+
+	color: #FFFFFF;
+}
+.form-container {
+	background-color: #6070FF;
+}
 
 
 
