@@ -361,20 +361,17 @@ h4 {
   position: absolute;
   width: 265px;
   height: 709.17px;
-  left: 153px;
+  left: 163px;
   margin-top: 30px;
 }
 
 form {
-  margin-top: 20px;
-}
-
-form ul {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 20px;
   flex-direction: column;
+  margin-top: 38px;
 }
 
 .form-holder{
@@ -382,7 +379,6 @@ form ul {
 	margin: 0 24px;
 	display: flex;
 	flex-direction: column;
-  
 }
 .form-holder h1 {
 	font-family: 'Poppins', 'sans-serif';
@@ -411,34 +407,47 @@ form ul {
 	border: 1px solid #CFD8DC;
 	border-radius: 8px;
 	background-color: #ffffff;
-	height: 48px;
-	width: 100%;
-}
-
-.form-input2 {
-	height: 174px;
-}
-
-.form-btn {
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 17px;
-	line-height: 24px;
-	color: #6070FF;
-	letter-spacing: 0.03em;
-	padding: 12px 16px;
-	margin-bottom: 45px;
-	border-radius: 8px;
-}
-::placeholder {
-	font-family: 'Poppins';
+	height: auto;
+	width: auto;
+  font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 20px;
-	  color: #172B4D;
-  }
+	color: #172B4D;
+  padding: 16px 15px;
+  
+}
+
+.form-input2 {
+	height: 142px;
+}
+
+.form-btn {
+	font-family: 'Poppins' sans-serif;
+	font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+	color: #6070FF;
+	letter-spacing: 0.03em;
+	padding: 12px 10px;
+	margin-bottom: 45px;
+	border-radius: 8px;
+  width: 150px;
+  height: 48px;
+  border: 1px solid #6070FF;
+  background-color: white;
+}
+input::placeholder {
+	color: #172B4D;
+}
+
+textarea::placeholder {
+  color: #B3BAC5;
+}
+
 
 
 
