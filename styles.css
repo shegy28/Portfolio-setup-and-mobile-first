@@ -488,13 +488,21 @@ textarea::placeholder {
     text-decoration: none;
   }
 
+  .main-sec {
+    display: block;
+    padding-left: 34px;
+    margin-top: 50px;
+  }
+
   .main {
+    display: block;
     background-image: url(./images/Header\ bg@2x.png);
-    background-size: cover;
-    width: auto;
-    height: 100vh;
-    border: red solid 2px;
-    
+    height: 90vh;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 1px;
   }
 
   .wrapper {
@@ -503,9 +511,25 @@ textarea::placeholder {
 
   .welcome-note {
     width: 360px;
+  }  
+
+  .info {
+    width: 730px;
   }
 
-  .info
-
+  .card {
+    display: flex;
+    flex-direction: row;
+    margin: 0 140px;
+    gap: 22px;
+    
+  }
   
+  .card-img {
+    width: 50%;
+  }
+
+  .card
+  
+
 }
