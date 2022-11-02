@@ -447,3 +447,65 @@ input::placeholder {
 textarea::placeholder {
   color: #b3bac5;
 }
+
+.desktop-header {
+  display: none;
+}
+
+/* Desktop version */
+@media only screen and (min-width: 768px){
+  .head-container {
+    margin: 0 155px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .desktop-header {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:  10px 0px 10px 10px;
+    gap: 32px;
+  }
+
+  .nav {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    text-decoration: none;
+  }
+
+  .nav a {
+    text-decoration: none;
+  }
+
+  .main {
+    background-image: url(./images/Header\ bg@2x.png);
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    border: red solid 2px;
+    
+  }
+
+  .wrapper {
+    margin: 200px 260px;
+  }
+
+  .welcome-note {
+    width: 360px;
+  }
+
+  .info
+
+  
+}
