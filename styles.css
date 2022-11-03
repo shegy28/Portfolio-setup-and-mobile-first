@@ -51,6 +51,10 @@ img {
   margin: 0 22px;
 }
 
+.a-wrapper {
+  margin: 0 22px;
+}
+
 h4 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -534,7 +538,7 @@ div.card-info2 {
   .card {
     display: flex;
     flex-direction: row;
-    margin: 0 160px;
+    margin: 0 11%;
     flex-shrink: 1;
     gap: 40px;
 
@@ -639,4 +643,92 @@ div.card-info2 {
     flex-shrink: 2;
   }
 
+.a-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0 130px;
+  gap: 37px;
+}
+
+.about-wrap {
+  width: 40%;
+}
+ 
+.skill {
+  width: 60%;
+}
+
+.a-info {
+  font-size: 16px;
+}
+
+.lang-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.lang-container {
+  flex-direction: column;
+  justify-content: left;
+  align-items:flex-start;
+  width: 105px;
+  gap: 15px;
+}
+
+.lang-container h4 {
+  margin: 5px;
+}
+
+.lang-img {
+  margin-left: 0;
+}
+
+.language-title {
+  margin-left: 12px;
+  color: #344563;
+}
+
+.direction , .drop-down {
+  margin-right: 20px;
+}
+
+.form-sec {
+  padding-top: 110px;
+} 
+
+.form-holder {
+  width: 534px;
+  height: 731px;
+  margin: -900px auto 0;
+}
+
+form {
+  margin: 30px 40px;
+}
+
+.form-input {
+  border-radius: 0;
+}
+
+.form-btn {
+  margin: 0 auto;
+}
+
+.img-holder {
+  background-image: url(./images/contact\ form\ background\ shapes@2x.png);
+  width: 100%;
+  height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0;
+  margin-top: 50px;
+  position: unset;
+}
+
+.form-container {
+  padding: 70px;
+  border-radius: 100px 0 0 0;
+}
 }
