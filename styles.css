@@ -465,7 +465,6 @@ div.card-info2 {
   display: none;
 }
 
-
 /* Desktop version */
 @media only screen and (min-width: 768px) {
   .head-container {
