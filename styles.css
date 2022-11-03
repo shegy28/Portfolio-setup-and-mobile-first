@@ -282,9 +282,6 @@ h4 {
   border-radius: 8px;
   background-color: white;
   margin: 20px 0;
-}
-
-.resume a {
   font-weight: 500;
   text-decoration: none;
   color: #396df2;
@@ -468,10 +465,8 @@ div.card-info2 {
 /* Desktop version */
 @media only screen and (min-width: 768px) {
   .head-container {
-    
     background-color: white;
     width: 100%;
-    background-color: white;
     margin: 0 auto;
     position: fixed;
     top: 1px;
@@ -483,7 +478,7 @@ div.card-info2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: white; 
+    background-color: white;
   }
 
   .menu {
@@ -522,16 +517,17 @@ div.card-info2 {
   .main {
     display: block;
     background-image: url(./images/Header\ bg@2x.png);
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 1px;
+    background-position-y: center;
   }
 
   .wrapper {
-    margin: 200px 260px;
+    margin: 19% 18%;
   }
 
   .welcome-note {
@@ -613,30 +609,46 @@ div.card-info2 {
     flex-shrink: 0;
   }
 
-  .see-project:hover {
-    background: #6070FF;
-    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
-    border: 1px solid #6070ff;
-    color: white;
-  }
-
-  .see-project1 {
-    padding: 12px 8px;
+  .see-project {
+    padding: 12px;
     border: 1px solid #6070ff;
     border-radius: 8px;
+    background-color: white;
     margin: 20px 0;
-    background: #4053fc;
-    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  }
-
-  .see-project1 a {
+    font-weight: 500;
     text-decoration: none;
-    color: white;
+    color: #396df2;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-size: 17px;
     line-height: 24px;
-    letter-spacing: 0.1em;
+    cursor: pointer;
+  }
+
+  .see-project:hover,
+  .resume:hover {
+    background: #6070ff;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    border: 1px solid #6070ff;
+    color: white;
+  }
+
+  .see-project a:hover,
+  .resume a:hover {
+    color: white;
+  }
+
+  .see-project:focus,
+  .resume:focus {
+    background-color: #2230d2;
+    border: 1px solid #6070ff;
+    color: white;
+  }
+
+  a .resume:focus,
+  a .see-project:focus {
+    color: white;
+    background: #2230d2;
   }
 
   .pointer-div {
