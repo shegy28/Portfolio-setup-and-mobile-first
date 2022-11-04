@@ -651,6 +651,13 @@ div.card-info2 {
     background: #2230d2;
   }
 
+  .card-img1:hover,
+  .lang-container:hover {
+    transform: scale(1.07);
+  }
+
+  
+
   .pointer-div {
     display: flex;
     flex-direction: row;
