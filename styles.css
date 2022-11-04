@@ -13,7 +13,7 @@ body {
   border-radius: 0 0 0 70px;
 }
 
-.head-container {
+.head-container1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -48,6 +48,10 @@ img {
 }
 
 .wrapper {
+  margin: 0 22px;
+}
+
+.a-wrapper {
   margin: 0 22px;
 }
 
@@ -120,11 +124,6 @@ h4 {
   background-color: #f7f7f9;
   align-items: center;
 }
-
-/* .work-container > div {
-  background-color: pink(255, 255, 255, 0.8);
-  font-size: 300px;
-} */
 
 .card {
   display: flex;
@@ -283,9 +282,6 @@ h4 {
   border-radius: 8px;
   background-color: white;
   margin: 20px 0;
-}
-
-.resume a {
   font-weight: 500;
   text-decoration: none;
   color: #396df2;
@@ -446,4 +442,315 @@ input::placeholder {
 
 textarea::placeholder {
   color: #b3bac5;
+}
+
+/* To ignore for moblie */
+
+.desktop-header {
+  display: none;
+}
+
+.card-img1 {
+  display: none;
+}
+
+div.card-info1 {
+  display: none;
+}
+
+div.card-info2 {
+  display: none;
+}
+
+/* Desktop version */
+@media only screen and (min-width: 768px) {
+  .head-container {
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 1px;
+    display: block;
+  }
+
+  .head-container1 {
+    margin: 0 155px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .desktop-header {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0 10px 10px;
+    gap: 32px;
+  }
+
+  .nav {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    text-decoration: none;
+  }
+
+  .nav a {
+    text-decoration: none;
+  }
+
+  .main-sec {
+    display: block;
+    padding-left: 34px;
+    margin-top: 50px;
+  }
+
+  .main {
+    display: block;
+    background-image: url(./images/Header\ bg@2x.png);
+    height: 100vh;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 1px;
+    background-position-y: center;
+  }
+
+  .wrapper {
+    margin: 19% 18%;
+  }
+
+  .welcome-note {
+    width: 400px;
+  }
+
+  .welcome-note h1 {
+    font-size: 48px;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    margin: 0 11%;
+    flex-shrink: 1;
+    gap: 40px;
+  }
+
+  div.card-img {
+    display: none;
+  }
+
+  div.card-img1 {
+    display: block;
+    background-size: contain;
+    align-self: center;
+  }
+
+  .card-info {
+    display: none;
+  }
+
+  div.card-info1 {
+    display: block;
+    margin: 24px 0 0 0;
+    width: 496px;
+  }
+
+  .tonic {
+    font-size: 40px;
+  }
+
+  .info-icons {
+    width: 306px;
+    margin: 0;
+  }
+
+  .info-icons h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .info-text {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  div.card-info2 {
+    display: block;
+    width: 496px;
+    margin: 24px 0 0 24px;
+    flex-shrink: 1;
+  }
+
+  .lang {
+    width: fit-content;
+  }
+
+  .rub {
+    flex-shrink: 0;
+  }
+
+  .button-div {
+    flex-shrink: 0;
+  }
+
+  .see-project {
+    padding: 12px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    background-color: white;
+    margin: 20px 0;
+    font-weight: 500;
+    text-decoration: none;
+    color: #396df2;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  .see-project:hover,
+  .resume:hover {
+    background: #6070ff;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    border: 1px solid #6070ff;
+    color: white;
+  }
+
+  .see-project a:hover,
+  .resume a:hover {
+    color: white;
+  }
+
+  .see-project:focus,
+  .resume:focus {
+    background-color: #2230d2;
+    border: 1px solid #6070ff;
+    color: white;
+  }
+
+  a .resume:focus,
+  a .see-project:focus {
+    color: white;
+    background: #2230d2;
+  }
+
+  .pointer-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hand-pointer {
+    width: 87px;
+    height: 87px;
+    padding: 30px 80px 0 0;
+    flex-shrink: 2;
+  }
+
+  .a-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0 130px;
+    gap: 37px;
+  }
+
+  .about-wrap {
+    width: 40%;
+  }
+
+  .skill {
+    width: 60%;
+  }
+
+  .a-info {
+    font-size: 16px;
+  }
+
+  .lang-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .lang-container {
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 105px;
+    gap: 15px;
+  }
+
+  .lang-container h4 {
+    margin: 5px;
+  }
+
+  .lang-img {
+    margin-left: 0;
+  }
+
+  .language-title {
+    margin-left: 12px;
+    color: #344563;
+  }
+
+  .direction,
+  .drop-down {
+    margin-right: 20px;
+  }
+
+  .form-sec {
+    padding-top: 110px;
+  }
+
+  .form-holder {
+    width: 534px;
+    height: 731px;
+    margin: -900px auto 0;
+  }
+
+  form {
+    margin: 30px 40px;
+  }
+
+  .form-input {
+    border-radius: 0;
+  }
+
+  .form-btn {
+    margin: 0 auto;
+  }
+
+  .img-holder {
+    background-image: url(./images/contact\ form\ background\ shapes@2x.png);
+    width: 100%;
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    margin-top: 50px;
+    position: unset;
+  }
+
+  .form-container {
+    padding: 70px;
+    border-radius: 100px 0 0 0;
+  }
 }
