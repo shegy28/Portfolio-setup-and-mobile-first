@@ -536,6 +536,20 @@ div.card-info2 {
 
   .welcome-note h1 {
     font-size: 48px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .info {
@@ -699,6 +713,11 @@ div.card-info2 {
 
   .lang-container h4 {
     margin: 5px;
+  }
+
+  .card-img1:hover,
+  .lang-container:hover {
+    transform: scale(1.07);
   }
 
   .lang-img {
