@@ -38,7 +38,7 @@ img {
 }
 
 .main {
-  background-image: url(/images/header-shapes\ mobile@2x.svg);
+  background-image: url(./images/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
