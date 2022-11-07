@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://github.com/shegy28/Portfolio-setup-and-mobile-first)
+[Live Demo Link](https://shegy28.github.io/Portfolio-setup-and-mobile-first/)
 
 ## Getting Started
 
@@ -40,7 +40,7 @@ Open the project using a  default run debug feature that can be found into your 
 
 👤 **Author**
 
-- GitHub: [@SabiMantock](https://github.com/shegy28)
+- GitHub: [@Shegy28](https://github.com/shegy28)
 
 ## 🤝 Contributing
 
