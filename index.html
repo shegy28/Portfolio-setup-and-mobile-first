@@ -11,25 +11,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <!-- drop down starts-->
+    <div id="drop-down" class="drop-down-menu">
+        <div class="x-holder">
+            <img src="./images/X-Icon.png" alt="icon" class="x-icon" onclick="closeNav()">
+        </div>    
+        <div class="drop-down-links">
+            <ul class="drop-down-item">
+                <li><a href="#Portfolio" onclick="closeNav()">Portfolio</a></li>
+                <li><a href="#about-myself" onclick="closeNav()">About </a></li>
+                <li><a href="#form" onclick="closeNav()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- drop down ends -->
+    <div id="container" class="container">
         <div class="back-color">
+            
             <header class="head-container">
                 <div class="head-container1">
                     <div class="logo">
                         <h3><a href="#">Asouzu Chimezie</a></h3>
                     </div>
-                    <div class="menu">
-                        <img src="./images/Union.png" alt="hamburger icon">
+                    <div class="menu" >
+                        <img src="./images/Union.png" alt="hamburger icon" onclick="openNav()" >
                     </div>
                     <ul class="desktop-header">
                         <li class="nav">
-                            <a href="">Portfolio</a> 
+                            <a href="#Portfolio">Portfolio</a> 
                         </li>
                         <li class="nav">
-                            <a href="">About</a>
+                            <a href="#about-myself">About</a>
                         </li>
                         <li class="nav">
-                            <a href="">Contact</a>
+                            <a href="#form">Contact</a>
                         </li>
                     </ul>
                  </div>
@@ -81,7 +96,7 @@
                 </div>
             </section>
         </div>
-        <section class="work-wrapper">
+        <section class="work-wrapper"  id="Portfolio">
             <div class="work-container">
                 <div>
                     <div class="card"> 
@@ -499,5 +514,6 @@
             </div>
         </section>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
