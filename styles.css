@@ -15,7 +15,12 @@ body {
 /* For drop down menu */
 .drop-down {
   background: #6070FF;
-  mix-blend-mode: multiply;
+  background-size: cover;
+  /* mix-blend-mode: multiply; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 
