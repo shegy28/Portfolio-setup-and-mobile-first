@@ -12,16 +12,17 @@ body {
   background-color: white;
   border-radius: 0 0 0 70px;
 }
+
 /* For drop down menu */
 .drop-down-menu {
-  background: #6070FF;
+  background: #6070ff;
   background-size: cover;
-  mix-blend-mode:multiply;
+  mix-blend-mode: multiply;
   width: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0px;
+  margin: 0;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -39,21 +40,38 @@ body {
   flex-direction: column;
 }
 
+/* not part of menu */
+.logo a {
+  color: #6070ff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.see-project a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #396df2;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+/* not part of menu ends here */
+
 .drop-down-item li a {
   text-decoration: none;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   display: flex;
-  color: #FFFFFF;
-  
-  
+  color: #fff;
 }
 
-
-.x-holder{
+.x-holder {
   display: flex;
   flex-direction: row-reverse;
   padding: 48px 36px 0 0;
@@ -62,9 +80,7 @@ body {
 .x-icon {
   width: 20px;
   height: 20px;
-
 }
-
 
 /* For drop down menu */
 
@@ -83,13 +99,6 @@ body {
 
 img {
   width: 100%;
-}
-
-.logo a {
-  color: #6070ff;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  text-decoration: none;
 }
 
 .main {
@@ -278,16 +287,6 @@ h4 {
   border-radius: 8px;
   background-color: white;
   margin: 20px 0;
-}
-
-.see-project a {
-  font-weight: 500;
-  text-decoration: none;
-  color: #396df2;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 24px;
 }
 
 .about-container {
