@@ -12,6 +12,14 @@ body {
   background-color: white;
   border-radius: 0 0 0 70px;
 }
+/* For drop down menu */
+.drop-down {
+  background: #6070FF;
+  mix-blend-mode: multiply;
+}
+
+
+/* For drop down menu */
 
 .head-container1 {
   display: flex;
