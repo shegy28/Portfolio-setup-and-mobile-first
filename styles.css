@@ -16,12 +16,15 @@ body {
 .drop-down-menu {
   background: #6070FF;
   background-size: cover;
-  mix-blend-mode: multiply;
-  width: 100%;
+  mix-blend-mode:multiply;
+  width: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .drop-down-links {
@@ -32,7 +35,7 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 30px;
   flex-direction: column;
 }
 
@@ -50,17 +53,15 @@ body {
 }
 
 
-
-
 .x-holder{
   display: flex;
   flex-direction: row-reverse;
-  padding: 62px 36px 0 0;
+  padding: 48px 36px 0 0;
 }
 
 .x-icon {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
 
 }
 
