@@ -826,4 +826,87 @@ div.card-info2 {
     padding: 70px;
     border-radius: 100px 0 0 0;
   }
+  
+  .popup-section {
+    display: none;
+  }
+
+  .popup {
+    margin: 0 11%;
+    flex-shrink: 1;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #dfe1e6;
+    padding: 16px;
+    
+  }
+
+  .popup-text {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .popup-body {
+    width: 65%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .popup-lang {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .langs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+    width: 253px;
+    height: 24px;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .langs li {
+    background: #ebebff;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    padding: 4px 12px;
+  }
+
+  .pop-button-div {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .pop-button {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+
+  .pop-button img {
+    width: 18px;
+    height: 18px;
+    margin: auto 0;
+  }
 }
