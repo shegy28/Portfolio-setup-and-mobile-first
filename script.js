@@ -10,6 +10,16 @@ function closeNav() {
 }
 closeNav();
 
+function openPopup() {
+  document.getElementById('popup-section').style.display = 'block';
+  document.getElementById('container').style.filter = 'blur(7px)';
+
+}
+
+function closePopup() {
+  document.getElementById('popup-section').style.display = 'none';
+  document.getElementById('container').style.filter = 'blur(0px)';
+}
 const projectDetails = [
     {
         name:'Tonic',
