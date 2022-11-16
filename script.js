@@ -10,16 +10,6 @@ function closeNav() {
 }
 closeNav();
 
-function openPopup() {
-  document.getElementById('popup-section').style.display = 'block';
-  document.getElementById('container').style.filter = 'blur(7px)';
-
-}
-
-function closePopup() {
-  document.getElementById('popup-section').style.display = 'none';
-  document.getElementById('container').style.filter = 'blur(0px)';
-}
 
 const projectDetails = [
     {
@@ -28,10 +18,21 @@ const projectDetails = [
         pointersLevel: 'Back End Dev',
         pointersYear: '2015',
         description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage: './images/Snapshoot Portfolio.png',
+        featuredImage: './images/First card.png',
+        mobileImage: './images/Snapshoot Portfolio.png',
         technologies:['html','css','javascript'],
         linkToLiveVersion:'#!',
         linkToSource: '#!',
+        mobileName:'Tonic',
+        mobilePointersTitle: 'CANOPY',
+        mobilePointersLevel: 'Back End Dev',
+        mobilePointersYear: '2015',
+        mobileDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        mobileFeaturedImage:'./images/Snapshoot Portfolio.png' ,
+        mobileTechnologies:['html','css','javascript'],
+        mobileLinkToLiveVersion:'#!',
+        mobileLinkToSource:'#!',
+       
     },
 
     {
@@ -44,8 +45,17 @@ const projectDetails = [
         technologies:['html', 'css','Ruby on rails','javascript'],
         linkToLiveVersion:'#!',
         linkToSource:'#!',
+        mobileName:'Multi-Post Stories',
+        mobilePointersTitle: 'CANOPY',
+        mobilePointersLevel: 'Back End Dev',
+        mobilePointersYear: '2015',
+        mobileDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        mobileFeaturedImage:'./images/Snapshoot Portfolio (1).png' ,
+        mobileTechnologies:['html','css','javascript'],
+        mobileLinkToLiveVersion:'#!',
+        mobileLinkToSource:'#!',
     },
-
+    
     {
         name:'Facebook 360',
         pointersTitle: 'FACEBOOK',
@@ -56,6 +66,15 @@ const projectDetails = [
         technologies:['html', 'css','Ruby on rails','javascript'],
         linkToLiveVersion:'#!',
         linkToSource:'#!',
+        mobileName:'Tonic',
+        mobilePointersTitle: 'CANOPY',
+        mobilePointersLevel: 'Back End Dev',
+        mobilePointersYear: '2015',
+        mobileDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        mobileFeaturedImage: './images/Snapshoot Portfolio (2).png',
+        mobileTechnologies:['html','css','javascript'],
+        mobileLinkToLiveVersion:'#!',
+        mobileLinkToSource:'#!',
     },
 
     {
@@ -68,193 +87,180 @@ const projectDetails = [
         technologies:['html', 'css','Ruby on rails','javascript'],
         linkToLiveVersion:'#!',
         linkToSource:'#!',
+        mobileName:'Multi-Post Stories',
+        mobilePointersTitle: 'CANOPY',
+        mobilePointersLevel: 'Back End Dev',
+        mobilePointersYear: '2015',
+        mobileDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        mobileFeaturedImage:'./images/Snapshoot Portfolio (3).png' ,
+        mobileTechnologies:['html','css','javascript'],
+        mobileLinkToLiveVersion:'#!',
+        mobileLinkToSource:'#!',
     }
 ];
 
-const projectDetailsMobile = [
-    {
-        name:'Tonic',
-        pointersTitle: 'CANOPY',
-        pointersLevel: 'Back End Dev',
-        pointersYear: '2015',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage: './images/Snapshoot Portfolio.png',
-        technologies:['html','css','javascript'],
-        linkToLiveVersion:'#!',
-        linkToSource: '#!',
-    },
+/* End of project detail object */
 
-    {
-        name:'Tonic',
-        pointersTitle: 'CANOPY',
-        pointersLevel: 'Back End Dev',
-        pointersYear: '2015',
-        description:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage:'./images/Snapshoot Portfolio (1).png' ,
-        technologies:['html','css','javascript'],
-        linkToLiveVersion:'#!',
-        linkToSource:'#!',
-    },
-
-    {
-        name:'Tonic',
-        pointersTitle: 'CANOPY',
-        pointersLevel: 'Back End Dev',
-        pointersYear: '2015',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage: './images/Snapshoot Portfolio (2).png',
-        technologies:['html','css','javascript'],
-        linkToLiveVersion:'#!',
-        linkToSource:'#!',
-    },
-
-    {
-        name:'Tonic',
-        pointersTitle: 'CANOPY',
-        pointersLevel: 'Back End Dev',
-        pointersYear: '2015',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage:'./images/Snapshoot Portfolio (3).png' ,
-        technologies:['html','css','javascript'],
-        linkToLiveVersion:'#!',
-        linkToSource:'#!',
+/* Populate object to html elements when the page loads */
+for (let i = 0; i < projectDetails.length; i += 1) {
+    let tech = '';
+    let mTech = '';
+    
+  
+    for (let j = 0; j < projectDetails[i].technologies.length; j += 1) {
+      tech += `<li >${projectDetails[i].technologies[j]}</li>`;
     }
-];
 
-// Desktop version
-const desktopPopUp = document.getElementById('desktop-popup');
-function closeDesktopPopUp() {
-  desktopPopUp.classList.add('hide-desktop-popup');
-}
+    for (let j = 0; j < projectDetails[i].mobileTechnologies.length; j += 1) {
+        mTech += `<li >${projectDetails[i].mobileTechnologies[j]}</li>`;
+      }
 
-const desktopProjectData = [
-  {
-    name: 'Tonic',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: './images/tonic-desktop.png',
-    pointersTitle: 'CANOPY',
-    pointersLevel: 'Back End Dev',
-    pointersYear: '2015',
-    technologies: ['html', 'css', 'javascript'],
-    linkToLiveVersion: '#!',
-    linkToSource: '#!',
-  },
-  {
-    name: 'Multi-Post Stories',
-    description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    featuredImage: './images/multi-post-stories-desktop.png',
-    pointersTitle: 'FACEBOOK',
-    pointersLevel: 'Full Stack Dev',
-    pointersYear: '2015',
-    technologies: ['html', 'css', 'javascript', 'Ruby on rails'],
-    linkToLiveVersion: '#!',
-    linkToSource: '#!',
-  },
-  {
-    name: 'Facebook 360',
-    description:
-      'Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    featuredImage: './images/facebook.png',
-    pointersTitle: 'FACEBOOK',
-    pointersLevel: 'Full Stack Dev',
-    pointersYear: '2015',
-    technologies: ['html', 'css', 'javascript', 'Ruby on rails'],
-    linkToLiveVersion: '#!',
-    linkToSource: '#!',
-  },
-  {
-    name: 'Uber Navigation',
-    description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    featuredImage: './images/uber-navigation.png',
-    pointersTitle: 'Uber',
-    pointersLevel: 'Lead Developer',
-    pointersYear: '2018',
-    technologies: ['html', 'css', 'javascript', 'Ruby on rails'],
-    linkToLiveVersion: '#!',
-    linkToSource: '#!',
-  },
-];
-
-function generateDesktopProjectData(projectList) {
-  let data = '';
-  for (let i = 0; i < projectList.length; i += 1) {
-    const currentProject = desktopProjectData[i];
-    let workReverse = '';
-    if (i % 2 !== 0) {
-      workReverse = 'work-reverse';
-    }
-    data += `
-            <div class='work ${workReverse}'>
-                <img src='${currentProject.featuredImage}' class='work-image' alt='image of a website hero-section'>
-                <div class='work-description-section'>
-                    <h2 class='work-title'>${currentProject.name}</h2>
-                    <div class='work-pointers'>
-                        <p class='work-pointers-title'>${currentProject.pointersTitle}</p>
-                        <ul class='work-pointers-bullets'>
-                            <li>${currentProject.pointersLevel}</li>
-                            <li>${currentProject.pointersYear}</li>
-                        </ul>
-                    </div>
-                    <p class='work-description'>${currentProject.description}</p>
-                    <ul class='tags'>
-                        <li class='tag'>html</li>
-                        <li class='tag'>css</li>
-                        <li class='tag'>javaScript</li>
+    if(i % 2 == 0){
+  
+        document.querySelector('#dynamic').innerHTML += `<div >
+        <div class="card"> 
+            <!-- mobile starts -->
+            <div id="mobile-popup" class="card-img">
+                <img src="${projectDetails[i].mobileFeaturedImage}" alt="blog image 4">
+            </div>
+            <div id="mobile-popup" class="card-info">
+                <div class="info-header">
+                    <h4 class="tonic">${projectDetails[i].mobileName}</h4>
+                </div>
+                <div class="info-icons">
+                    <h4 class="info-icons-p1">${projectDetails[i].mobilePointersTitle}</h4>
+                    <img src="./images/Counter.png" alt="dot">
+                    <h4 class="info-icons-p2">${projectDetails[i].mobilePointersLevel}</h4>
+                    <img src="./images/Counter.png" alt="dot">
+                    <h4 class="info-icons-p2">${projectDetails[i].mobilePointersYear}</h4>
+                </div>
+                <div class="info-text">
+                    <p >
+                    ${projectDetails[i].mobileDescription}
+                    </p>
+                </div>
+                <div id="lang">
+                    <ul class="lang">
+                        ${mTech}
                     </ul>
-                    <a href='#!' class='project-link' onclick='openDesktopPopUp(${i})' >
-                     See Project
+                </div>
+                <div>
+                    <button class="see-project" onclick="openPopup()">
+                        <a href="#">See Project</a>
+                    </button>
+                </div>
+            </div>
+            <!-- for desktop -->
+            <div id="desktop-popup" class="card-info2">
+                <div class="info-header">
+                    <h4 class="tonic">${projectDetails[i].name}
+                    </h4>
+                </div>
+                <div class="info-icons">
+                    <h4 class="info-icons-p1">${projectDetails[i].pointersTitle}</h4>
+                    <img src="./images/Counter.png" alt="dot">
+                    <h4 class="info-icons-p2">${projectDetails[i].pointersLevel}</h4>
+                    <img src="./images/Counter.png" alt="dot">
+                    <h4 class="info-icons-p2">${projectDetails[i].pointersYear}</h4>
+                </div>
+                <div class="info-text">
+                    <p>
+                        ${projectDetails[i].description}
+                    </p>
+                </div>
+                <div id="lang">
+                    <ul class="lang">
+                        ${tech}
+                    </ul>
+                </div>
+                <div>
+                    <a href="#"  onclick="openPopup()">
+                        <button type="submit" class="see-project">
+                        See Project
+                        </button>
                     </a>
-                </div>  
+                </div>
             </div>
-        `;
-  }
-  return data;
-}
-
-document.getElementById('desktop-works').innerHTML = generateDesktopProjectData(projectData);
-
-function openDesktopPopUp(counter) {
-  const currentProjectData = desktopProjectData[counter];
-  const desktopTechnologies = getTechnologies(
-    desktopProjectData[counter].technologies,
-  );
-  const data = `
-    <div class='desktop-popup' >
-        <div class='desktop-popup-title'>
-            <h2 class='work-title'>${currentProjectData.name}</h2>
-        <i class='fa-regular fa-x desktop-dropdown-x-icon' onclick='closeDesktopPopUp()'></i>
-        </div>
-        <div class='work-pointers'>
-            <p class='work-pointers-title'>${currentProjectData.pointersTitle}</p>
-            <ul class='work-pointers-bullets-popup'>
-                <li>${currentProjectData.pointersLevel}</li>
-                <li>${currentProjectData.pointersYear}</li>
-            </ul>
-        </div>
-        <img src='${currentProjectData.featuredImage}' class='desktop-popup-work-image' alt='image of a website hero-section'>
-        <div class='desktop-popup-description'>
-            <div class='desktop-popup-work-description'>
-                <p>${currentProjectData.description}</p>
+            <div id="desktop-popup" class="card-img1">
+                <img src="${projectDetails[i].featuredImage}" alt="blog image 1">
             </div>
-            <div class='desktop-popup-items'>
-                <ul class=' desktop-popup-tags'>
-                ${desktopTechnologies}
-                </ul>
-                <a href='${currentProjectData.linkToLiveVersion}' class=' desktop-popup-project-link'>
-                See live
-                    <img src='/images/Popup-icon.png' alt='image of a small icon' class='popup-icon'>
-                </a>
-                <a href='${currentProjectData.linkToSource}' class=' desktop-popup-project-link'>
-                See Source
-                    <img src='/images/github-vector.png' alt='github icon' class='popup-icon'>
-                </a>
-            </div>  
-        </div>  
-    </div>
-    `;
-  desktopPopUp.innerHTML = data;
-  desktopPopUp.classList.remove('hide-desktop-popup');
+            <!-- for desktop ends -->
+        </div>
+    </div>`;
+    }
+
+    else if(i % 2 !== 0){
+  
+        document.querySelector('#dynamic').innerHTML += `<div >
+        <div class="card" >
+            <!-- mobile starts --> 
+            <div id="mobile-popup" class="card-img">
+                <img src="${projectDetails[i].mobileFeaturedImage}" alt="blog image 1">
+            </div>
+            <div id="mobile-popup" class="card-info">
+                <div class="info-header">
+                    <h4 class="tonic">${projectDetails[i].mobileName}</h4>
+                </div>
+                <div class="info-icons">
+                    <h4 class="info-icons-p1">${projectDetails[i].mobilePointersTitle}</h4>
+                    <img src="./images/Counter.png" alt="dot">
+                    <h4 class="info-icons-p2">${projectDetails[i].mobilePointersLevel}</h4>
+                    <img src="./images/Counter.png" alt="dot">
+                    <h4 class="info-icons-p2">${projectDetails[i].mobilePointersYear}</h4>
+                </div>
+                <div class="info-text">
+                    <p>
+                    ${projectDetails[i].mobileDescription}
+                    </p>
+                </div>
+                <div id="lang">
+                    <ul class="lang">
+                    ${mTech }
+                    </ul>
+                </div>
+                <div>
+                    <button class="see-project" onclick="openPopup()">
+                        <a href="#">See Project</a>
+                    </button>
+                </div>
+            </div>
+            <!-- mobile ends -->
+            <!-- for desktop -->
+            <div id="desktop-popup" class="card-img1">
+                <img src="${projectDetails[i].featuredImage}" alt="blog image 1">
+            </div>
+            <div class="card-info1" id="desktop-popup">
+                <div class="info-header">
+                    <h4 class="tonic">${projectDetails[i].name}</h4>
+                </div>
+                <div class="info-icons">
+                    <h4 class="info-icons-p1">${projectDetails[i].pointersTitle}</h4>
+                    <img src="./images/Counter.png" alt="dot">
+                    <h4 class="info-icons-p2">${projectDetails[i].pointersLevel}</h4>
+                    <img src="./images/Counter.png" alt="dot">
+                    <h4 class="info-icons-p2">${projectDetails[i].pointersYear}</h4>
+                </div>
+                <div class="info-text">
+                    <p>
+                    ${projectDetails[i].description}
+                    </p>
+                </div>
+                <div id="lang">
+                    <ul class="lang">
+                    ${tech}
+                    </ul>
+                </div>
+                <div>
+                    <a href="#" onclick="openPopup()">
+                        <button type="submit" class="see-project">
+                        See Project
+                        </button>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>`;
+    }
 }
+  /* End of project detail population when the pages loads */
+
