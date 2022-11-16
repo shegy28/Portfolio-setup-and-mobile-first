@@ -518,7 +518,7 @@ div.card-info2 {
 
 .popup-section {
   display: none;
-  background: rgb(193, 199, 208, 0.6);;
+  background: rgb(193, 199, 208, 0.6);
   backdrop-filter: blur(7px);
   top: 0;
   right: 0;
@@ -527,7 +527,6 @@ div.card-info2 {
   z-index: 10;
   position: fixed;
   height: 90vh;
-  top: 0;
 }
 
 .popup {
@@ -536,7 +535,6 @@ div.card-info2 {
   gap: 60px;
   display: flex;
   flex-direction: column;
-  align-items: left;
   justify-content: left;
   background: #fff;
   border-radius: 20px;
@@ -559,14 +557,14 @@ div.card-info2 {
   height: 12px;
 }
 
-.popup-img1{
+.popup-img1 {
   display: none;
 }
 
 .popup-text {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 0;
 }
 
 .popup-body {
@@ -579,7 +577,8 @@ div.card-info2 {
   color: #344563;
 }
 
-.desk-hidden, .popup-lang {
+.desk-hidden,
+.popup-lang {
   display: none;
 }
 
@@ -942,10 +941,10 @@ div.card-info2 {
     padding: 70px;
     border-radius: 100px 0 0 0;
   }
-  
+
   .popup-section {
     display: none;
-    background: rgb(193, 199, 208, 0.6);;
+    background: rgb(193, 199, 208, 0.6);
     backdrop-filter: blur(7px);
     top: 0;
     right: 0;
@@ -954,11 +953,6 @@ div.card-info2 {
     z-index: 10;
     position: fixed;
     height: 100vh;
-    
-  }
-
-  .popup-container {
-    
   }
 
   .popup {
@@ -967,7 +961,6 @@ div.card-info2 {
     gap: 60px;
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: left;
     background: #fff;
     border-radius: 20px;
@@ -992,9 +985,9 @@ div.card-info2 {
     display: block;
   }
 
-.popup-img2 {
-  display: none;
-}
+  .popup-img2 {
+    display: none;
+  }
 
   .popup-text {
     display: flex;
@@ -1027,7 +1020,6 @@ div.card-info2 {
 
   .popup-langs {
     display: none;
-     
   }
 
   .langs {
@@ -1060,7 +1052,7 @@ div.card-info2 {
     display: flex;
     gap: 15px;
   }
-  
+
   .pop-button {
     display: flex;
     gap: 10px;

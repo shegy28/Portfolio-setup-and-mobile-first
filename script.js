@@ -10,114 +10,111 @@ function closeNav() {
 }
 closeNav();
 
-
 const projectDetails = [
-    {
-        name:'Tonic',
-        pointersTitle: 'CANOPY',
-        pointersLevel: 'Back End Dev',
-        pointersYear: '2015',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage: './images/First card.png',
-        mobileImage: './images/Snapshoot Portfolio.png',
-        technologies:['html','css','javascript'],
-        linkToLiveVersion:'#!',
-        linkToSource: '#!',
-        mobileName:'Tonic',
-        mobilePointersTitle: 'CANOPY',
-        mobilePointersLevel: 'Back End Dev',
-        mobilePointersYear: '2015',
-        mobileDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        mobileFeaturedImage:'./images/Snapshoot Portfolio.png' ,
-        mobileTechnologies:['html','css','javascript'],
-        mobileLinkToLiveVersion:'#!',
-        mobileLinkToSource:'#!',
-       
-    },
+  {
+    name: 'Tonic',
+    pointersTitle: 'CANOPY',
+    pointersLevel: 'Back End Dev',
+    pointersYear: '2015',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: './images/First card.png',
+    mobileImage: './images/Snapshoot Portfolio.png',
+    technologies: ['html', 'css', 'javascript'],
+    linkToLiveVersion: '#!',
+    linkToSource: '#!',
+    mobileName: 'Tonic',
+    mobilePointersTitle: 'CANOPY',
+    mobilePointersLevel: 'Back End Dev',
+    mobilePointersYear: '2015',
+    mobileDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    mobileFeaturedImage: './images/Snapshoot Portfolio.png',
+    mobileTechnologies: ['html', 'css', 'javascript'],
+    mobileLinkToLiveVersion: '#!',
+    mobileLinkToSource: '#!',
 
-    {
-        name: 'Multi-Post Stories' ,
-        pointersTitle: 'FACEBOOK',
-        pointersLevel: 'Full Stack Dev',
-        pointersYear: '2015',
-        description:'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-        featuredImage:'./images/second desktop.png' ,
-        technologies:['html', 'css','Ruby on rails','javascript'],
-        linkToLiveVersion:'#!',
-        linkToSource:'#!',
-        mobileName:'Multi-Post Stories',
-        mobilePointersTitle: 'CANOPY',
-        mobilePointersLevel: 'Back End Dev',
-        mobilePointersYear: '2015',
-        mobileDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        mobileFeaturedImage:'./images/Snapshoot Portfolio (1).png' ,
-        mobileTechnologies:['html','css','javascript'],
-        mobileLinkToLiveVersion:'#!',
-        mobileLinkToSource:'#!',
-    },
-    
-    {
-        name:'Facebook 360',
-        pointersTitle: 'FACEBOOK',
-        pointersLevel: 'Full Stack Dev',
-        pointersYear: '2015',
-        description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-        featuredImage: './images/third desktop card.png',
-        technologies:['html', 'css','Ruby on rails','javascript'],
-        linkToLiveVersion:'#!',
-        linkToSource:'#!',
-        mobileName:'Tonic',
-        mobilePointersTitle: 'CANOPY',
-        mobilePointersLevel: 'Back End Dev',
-        mobilePointersYear: '2015',
-        mobileDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        mobileFeaturedImage: './images/Snapshoot Portfolio (2).png',
-        mobileTechnologies:['html','css','javascript'],
-        mobileLinkToLiveVersion:'#!',
-        mobileLinkToSource:'#!',
-    },
+  },
 
-    {
-        name:'Uber Navigation' ,
-        pointersTitle: 'Uber',
-        pointersLevel: 'Lead Developer',
-        pointersYear: '2018',
-        description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-        featuredImage:'./images/fourth desktop.png' ,
-        technologies:['html', 'css','Ruby on rails','javascript'],
-        linkToLiveVersion:'#!',
-        linkToSource:'#!',
-        mobileName:'Multi-Post Stories',
-        mobilePointersTitle: 'CANOPY',
-        mobilePointersLevel: 'Back End Dev',
-        mobilePointersYear: '2015',
-        mobileDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        mobileFeaturedImage:'./images/Snapshoot Portfolio (3).png' ,
-        mobileTechnologies:['html','css','javascript'],
-        mobileLinkToLiveVersion:'#!',
-        mobileLinkToSource:'#!',
-    }
+  {
+    name: 'Multi-Post Stories',
+    pointersTitle: 'FACEBOOK',
+    pointersLevel: 'Full Stack Dev',
+    pointersYear: '2015',
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    featuredImage: './images/second desktop.png',
+    technologies: ['html', 'css', 'Ruby on rails', 'javascript'],
+    linkToLiveVersion: '#!',
+    linkToSource: '#!',
+    mobileName: 'Multi-Post Stories',
+    mobilePointersTitle: 'CANOPY',
+    mobilePointersLevel: 'Back End Dev',
+    mobilePointersYear: '2015',
+    mobileDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    mobileFeaturedImage: './images/Snapshoot Portfolio (1).png',
+    mobileTechnologies: ['html', 'css', 'javascript'],
+    mobileLinkToLiveVersion: '#!',
+    mobileLinkToSource: '#!',
+  },
+
+  {
+    name: 'Facebook 360',
+    pointersTitle: 'FACEBOOK',
+    pointersLevel: 'Full Stack Dev',
+    pointersYear: '2015',
+    description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    featuredImage: './images/third desktop card.png',
+    technologies: ['html', 'css', 'Ruby on rails', 'javascript'],
+    linkToLiveVersion: '#!',
+    linkToSource: '#!',
+    mobileName: 'Tonic',
+    mobilePointersTitle: 'CANOPY',
+    mobilePointersLevel: 'Back End Dev',
+    mobilePointersYear: '2015',
+    mobileDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    mobileFeaturedImage: './images/Snapshoot Portfolio (2).png',
+    mobileTechnologies: ['html', 'css', 'javascript'],
+    mobileLinkToLiveVersion: '#!',
+    mobileLinkToSource: '#!',
+  },
+
+  {
+    name: 'Uber Navigation',
+    pointersTitle: 'Uber',
+    pointersLevel: 'Lead Developer',
+    pointersYear: '2018',
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    featuredImage: './images/fourth desktop.png',
+    technologies: ['html', 'css', 'Ruby on rails', 'javascript'],
+    linkToLiveVersion: '#!',
+    linkToSource: '#!',
+    mobileName: 'Multi-Post Stories',
+    mobilePointersTitle: 'CANOPY',
+    mobilePointersLevel: 'Back End Dev',
+    mobilePointersYear: '2015',
+    mobileDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    mobileFeaturedImage: './images/Snapshoot Portfolio (3).png',
+    mobileTechnologies: ['html', 'css', 'javascript'],
+    mobileLinkToLiveVersion: '#!',
+    mobileLinkToSource: '#!',
+  },
 ];
 
 /* End of project detail object */
 
 /* Populate object to html elements when the page loads */
 for (let i = 0; i < projectDetails.length; i += 1) {
-    let tech = '';
-    let mTech = '';
-    
-  
-    for (let j = 0; j < projectDetails[i].technologies.length; j += 1) {
-      tech += `<li >${projectDetails[i].technologies[j]}</li>`;
-    }
+  let tech = '';
+  let mTech = '';
 
-    for (let j = 0; j < projectDetails[i].mobileTechnologies.length; j += 1) {
-        mTech += `<li >${projectDetails[i].mobileTechnologies[j]}</li>`;
-      }
+  for (let j = 0; j < projectDetails[i].technologies.length; j += 1) {
+    tech += `<li >${projectDetails[i].technologies[j]}</li>`;
+  }
 
-    if(i % 2 == 0){
-  
-        document.querySelector('#dynamic').innerHTML += `<div >
+  for (let j = 0; j < projectDetails[i].mobileTechnologies.length; j += 1) {
+    mTech += `<li >${projectDetails[i].mobileTechnologies[j]}</li>`;
+  }
+
+  if (i % 2 === 0) {
+    document.querySelector('#dynamic').innerHTML += `<div >
         <div class="card"> 
             <!-- mobile starts -->
             <div id="mobile-popup" class="card-img">
@@ -187,11 +184,8 @@ for (let i = 0; i < projectDetails.length; i += 1) {
             <!-- for desktop ends -->
         </div>
     </div>`;
-    }
-
-    else if(i % 2 !== 0){
-  
-        document.querySelector('#dynamic').innerHTML += `<div >
+  } else if (i % 2 !== 0) {
+    document.querySelector('#dynamic').innerHTML += `<div >
         <div class="card" >
             <!-- mobile starts --> 
             <div id="mobile-popup" class="card-img">
@@ -215,7 +209,7 @@ for (let i = 0; i < projectDetails.length; i += 1) {
                 </div>
                 <div id="lang">
                     <ul class="lang">
-                    ${mTech }
+                    ${mTech}
                     </ul>
                 </div>
                 <div>
@@ -260,12 +254,12 @@ for (let i = 0; i < projectDetails.length; i += 1) {
             </div>
             </div>
         </div>`;
-    }
+  }
 }
-  /* End of project detail population when the pages loads */
+/* End of project detail population when the pages loads */
 
-  function openPopup() {
-    document.querySelector('#popup-section').innerHTML += `<div class="popup-container">
+function openPopup() {
+  document.querySelector('#popup-section').innerHTML += `<div class="popup-container">
     <div class="popup"> 
         <div id="desktop-popup" class="">
             <div class="info-header popup-header">
@@ -350,12 +344,13 @@ for (let i = 0; i < projectDetails.length; i += 1) {
     </div>
 </div>`;
 
-    document.getElementById('popup-section').style.display = 'block';
-    document.getElementById('container').style.filter = 'blur(7px)';
-  
+  document.getElementById('popup-section').style.display = 'block';
+  document.getElementById('container').style.filter = 'blur(7px)';
 }
-  
+openPopup();
+
 function closePopup() {
-    document.getElementById('popup-section').style.display = 'none';
-    document.getElementById('container').style.filter = 'blur(0px)';
+  document.getElementById('popup-section').style.display = 'none';
+  document.getElementById('container').style.filter = 'blur(0px)';
 }
+closePopup();
