@@ -1051,6 +1051,8 @@ div.card-info2 {
   .pop-button-div {
     display: flex;
     gap: 15px;
+    width: 353px;
+    height: 84px;
   }
 
   .pop-button {
@@ -1058,11 +1060,13 @@ div.card-info2 {
     gap: 10px;
     font-size: 15px;
     padding: 10px 25px;
+    flex-wrap: wrap;
   }
 
   .pop-button img {
     width: 18px;
     height: 18px;
     margin: auto 0;
+    flex-wrap: wrap;
   }
 }
