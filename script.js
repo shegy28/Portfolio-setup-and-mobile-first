@@ -354,3 +354,16 @@ function closePopup() {
   document.getElementById('container').style.filter = 'blur(0px)';
 }
 closePopup();
+
+// form validation
+
+const form = document.getElementById('contact');
+const email = document.getElementById('email');
+const errormsg = document.getElementById('error');
+
+form.addEventListener('submit', (e) => {
+  if (email.value.toLowerCase() !== email.value) {
+    errormsg.style.display = 'block';
+    e.preventDefault();
+  }
+});
