@@ -368,7 +368,10 @@ form.addEventListener('submit', (e) => {
     errormsg.style.display = 'block';
     e.preventDefault();
   }
-
+  
+  localStorage.setItem("name-input", username.value);
+  localStorage.setItem("email-input", email.value);
+  localStorage.setItem("msg-input", message.value);
   
 });
 
