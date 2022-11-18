@@ -371,10 +371,10 @@ form.addEventListener('submit', (e) => {
 });
 
 form.addEventListener('input', () => {
-    localStorage.setItem('name-input', username.value);
-    localStorage.setItem('email-input', email.value);
-    localStorage.setItem('msg-input', message.value);
-  });
+  localStorage.setItem('name-input', username.value);
+  localStorage.setItem('email-input', email.value);
+  localStorage.setItem('msg-input', message.value);
+});
 
 username.value = localStorage.getItem('name-input');
 email.value = localStorage.getItem('email-input');
