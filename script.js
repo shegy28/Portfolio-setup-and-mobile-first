@@ -358,7 +358,9 @@ closePopup();
 // form validation
 
 const form = document.getElementById('contact');
+const username = document.getElementById('name');
 const email = document.getElementById('email');
+const message = document.getElementById('textBody');
 const errormsg = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
@@ -367,3 +369,13 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+form.addEventListener('input', () => {
+  localStorage.setItem('name-input', username.value);
+  localStorage.setItem('email-input', email.value);
+  localStorage.setItem('msg-input', message.value);
+});
+
+username.value = localStorage.getItem('name-input');
+email.value = localStorage.getItem('email-input');
+message.value = localStorage.getItem('msg-input');
