@@ -259,7 +259,7 @@ for (let i = 0; i < projectDetails.length; i += 1) {
 /* End of project detail population when the pages loads */
 
 function openPopup() {
-  document.querySelector('#popup-section').innerHTML += `<div class="popup-container">
+  document.querySelector('#popup-sections').innerHTML += `<div class="popup-container">
     <div class="popup"> 
         <div id="desktop-popup" class="">
             <div class="info-header popup-header">
