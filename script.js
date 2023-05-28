@@ -142,7 +142,7 @@ for (let i = 0; i < projectDetails.length; i += 1) {
                     </ul>
                 </div>
                 <div>
-                    <button class="see-project" onclick="openPopup()">
+                    <button class="see-project" onclick="openPopup(${i})">
                         <a href="#">See Project</a>
                     </button>
                 </div>
@@ -171,7 +171,7 @@ for (let i = 0; i < projectDetails.length; i += 1) {
                     </ul>
                 </div>
                 <div>
-                    <a href="#"  onclick="openPopup()">
+                    <a href="#"  onclick="openPopup(${i})">
                         <button type="submit" class="see-project">
                         See Project
                         </button>
@@ -213,7 +213,7 @@ for (let i = 0; i < projectDetails.length; i += 1) {
                     </ul>
                 </div>
                 <div>
-                    <button class="see-project" onclick="openPopup()">
+                    <button class="see-project" onclick="openPopup(${i})">
                         <a href="#">See Project</a>
                     </button>
                 </div>
@@ -245,7 +245,7 @@ for (let i = 0; i < projectDetails.length; i += 1) {
                     </ul>
                 </div>
                 <div>
-                    <a href="#" onclick="openPopup()">
+                    <a href="#" onclick="openPopup(${i})">
                         <button type="submit" class="see-project">
                         See Project
                         </button>
@@ -258,46 +258,52 @@ for (let i = 0; i < projectDetails.length; i += 1) {
 }
 /* End of project detail population when the pages loads */
 
-function openPopup() {
+function openPopup(index) {
+  const obj = projectDetails[index];
+  let tech = '';
+  let mTech = '';
+
+  for (let j = 0; j < obj.technologies.length; j += 1) {
+    tech += `<li >${obj.technologies[j]}</li>`;
+  }
+
+  for (let j = 0; j < obj.mobileTechnologies.length; j += 1) {
+    mTech += `<li >${obj.mobileTechnologies[j]}</li>`;
+  }
   document.querySelector('#popup-section').innerHTML += `<div class="popup-container">
     <div class="popup"> 
         <div id="desktop-popup" class="">
             <div class="info-header popup-header">
-                <h4 class="tonic">Uber Navigation
+                <h4 class="tonic">${obj.name}
                 </h4>
                 <img src="./images/popup=x-Icon.png" alt="popup-x icon" class="popup-header-image" onclick="closePopup()">
             </div>
             <div class="info-icons">
-                <h4 class="info-icons-p1">Uber</h4>
+                <h4 class="info-icons-p1">${obj.pointersTitle}</h4>
                 <img src="./images/Counter.png" alt="dot">
-                <h4 class="info-icons-p2">Lead Developer</h4>
+                <h4 class="info-icons-p2">${obj.pointersLevel}</h4>
                 <img src="./images/Counter.png" alt="dot">
-                <h4 class="info-icons-p2">2018</h4>
+                <h4 class="info-icons-p2">${obj.pointersYear}</h4>
             </div>
             <div id="desktop-popup" class="popup-img1">
-                <img src="./images/popup desktop.png" alt="popup image 1">
+                <img src="${obj.featuredImage}" alt="popup image 1">
             </div>
             <div id="mobile-popup" class="popup-img2">
-                <img src="./images/Snapshoot Portfolio.png" alt="popup image 1">
+                <img src="${obj.mobileFeaturedImage}" alt="popup image 1">
             </div>
             <div class="popup-text">
                 <div class="popup-body">
                     <p class="desk-hidden">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
+                    ${obj.description}
                     </p>
                     <p class="mobile-hidden">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+                    ${obj.description}
                     </p>
                 </div>
                 <div id ="mobile-popup-langs" class="popup-lang">
                     <div id="lang">
                         <ul class="langs">
-                            <li>html</li>
-                            <li>css</li>
-                            <li>javascript</li>
-                            <li>github</li>
-                            <li>ruby</li>
-                            <li>bootstrap</li>
+                            ${tech}
                         </ul>
                     </div>
                     <div class="pop-button-div">
@@ -318,9 +324,7 @@ function openPopup() {
                 <div id ="mobile-popup-langs"class="popup-langs">
                     <div id="lang">
                         <ul class="langs">
-                            <li>html</li>
-                            <li>css</li>
-                            <li>javascript</li>
+                         ${mTech}
                         </ul>
                     </div>
                     <div class="pop-button-div">
