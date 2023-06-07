@@ -25,7 +25,7 @@ body {
   margin: 0;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .drop-down-links {
@@ -84,6 +84,16 @@ body {
 
 /* For drop down menu */
 
+.head-container {
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  display: block;
+  z-index: 1;
+}
+
 .head-container1 {
   display: flex;
   flex-direction: row;
@@ -108,7 +118,7 @@ img {
   width: 100%;
   height: 100vh;
   background-position: right bottom;
-  padding-top: 80px;
+  padding-top: 110px;
 }
 
 .wrapper {
@@ -353,10 +363,30 @@ h4 {
   font-style: normal;
 }
 
-.lang-icons {
+.lang-icons,
+.lang-icon,
+.lang-ico {
   list-style: none;
   padding: 0;
+  display: none;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
 }
+
+.lang-icon,
+.lang-ico {
+  padding:0 20px;
+}
+
+.frame {
+  border: solid 1px #172b4d;
+  text-align: center;
+}
+
+.frame h4 {
+  font-weight:700;
+}
+
 
 .lang-img {
   width: 48px;
@@ -387,6 +417,14 @@ h4 {
   width: 14px;
 }
 
+.direct {
+  width: 8px;
+}
+
+.direct-down {
+  display: none;
+}
+
 .tech-list {
   display: flex;
   justify-content: space-between;
@@ -412,7 +450,7 @@ h4 {
   position: absolute;
   width: 230px;
   height: 709.17px;
-  left: 154px;
+  right: 0 ;
   margin-top: 30px;
 }
 
@@ -423,6 +461,7 @@ form {
   gap: 20px;
   flex-direction: column;
   margin-top: 38px;
+  z-index: 1;
 }
 
 .form-holder {
@@ -439,7 +478,7 @@ form {
   text-align: center;
   line-height: 52px;
   color: #fff;
-  margin-top: 110px;
+  margin-top: 210px;
   margin-bottom: 10px;
 }
 
@@ -629,11 +668,16 @@ div.card-info2 {
   gap: 15px;
 }
 
+.pop-button-div a {
+  text-decoration: none;
+}
+
 .pop-button {
   display: flex;
   gap: 10px;
   font-size: 15px;
   padding: 10px 25px;
+  color: #6070ff;
 }
 
 .pop-button img {
@@ -877,10 +921,13 @@ div.card-info2 {
     font-size: 16px;
   }
 
-  .lang-icons {
-    display: flex;
+  .lang-icons,
+  .lang-icon,
+  .lang-ico {
+    display: none;
     flex-direction: row;
     gap: 12px;
+    padding: 0;
   }
 
   .lang-container {
@@ -967,7 +1014,7 @@ div.card-info2 {
   }
 
   .popup {
-    margin: 0 11%;
+    margin: 0 20%;
     flex-shrink: 1;
     gap: 60px;
     display: flex;
@@ -976,12 +1023,24 @@ div.card-info2 {
     background: #fff;
     border-radius: 20px;
     border: 1px solid #dfe1e6;
-    padding: 16px;
+    padding: 30px;
     top: 4%;
     bottom: 4%;
-    overflow: auto;
+    overflow: scroll;
   }
 
+  .popup::-webkit-scrollbar {
+    width: 0.5em; /* Set the width of the scrollbar */
+  }
+  
+  .popup::-webkit-scrollbar-track {
+    background-color: transparent; /* Set a transparent background */
+  }
+  
+  .popup::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the color of the scrollbar thumb */
+  }
+  
   .popup-header {
     display: flex;
     justify-content: space-between;

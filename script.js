@@ -1,98 +1,151 @@
 function openNav() {
   document.getElementById('drop-down').style.width = '100%';
   document.getElementById('container').style.filter = 'blur(7px)';
+  document.getElementById('head-container').style.display = 'none';
 }
 openNav();
 
 function closeNav() {
   document.getElementById('drop-down').style.width = '0%';
   document.getElementById('container').style.filter = 'blur(0px)';
+  document.getElementById('head-container').style.display = 'block';
 }
 closeNav();
 
+function langOpen() {
+    document.getElementById('direct-down').style.display = 'none';
+    document.getElementById('direct').style.display = 'block';
+    document.getElementById('lang-icons').style.display = 'none';
+}
+
+function langClose() {
+    document.getElementById('direct-down').style.display = 'block';
+    document.getElementById('direct').style.display = 'none';
+    let langIcons = document.getElementById('lang-icons');
+    if (window.innerWidth >= 768) {
+        langIcons.style.display = 'flex'; 
+      } else {
+        langIcons.style.display = 'flex';
+    }
+}
+
+function fOpen() {
+    document.getElementById('ddf').style.display = 'none';
+    document.getElementById('df').style.display = 'block';
+    document.getElementById('frame-icon').style.display = 'none';
+}
+
+function fClose() {
+    document.getElementById('ddf').style.display = 'block';
+    document.getElementById('df').style.display = 'none';
+    let langIcons = document.getElementById('frame-icon');
+    if (window.innerWidth >= 768) {
+        langIcons.style.display = 'flex'; 
+      } else {
+        langIcons.style.display = 'flex';
+    }
+}
+
+function sOpen() {
+    document.getElementById('sdf').style.display = 'none';
+    document.getElementById('sf').style.display = 'block';
+    document.getElementById('skill-icon').style.display = 'none';
+}
+
+function sClose() {
+    document.getElementById('sdf').style.display = 'block';
+    document.getElementById('sf').style.display = 'none';
+    let langIcons = document.getElementById('skill-icon');
+    if (window.innerWidth >= 768) {
+        langIcons.style.display = 'flex'; 
+      } else {
+        langIcons.style.display = 'flex';
+    }
+}
+
 const projectDetails = [
   {
-    name: 'Tonic',
-    pointersTitle: 'CANOPY',
-    pointersLevel: 'Back End Dev',
-    pointersYear: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: './images/First card.png',
-    mobileImage: './images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'javascript'],
-    linkToLiveVersion: '#!',
-    linkToSource: '#!',
-    mobileName: 'Tonic',
-    mobilePointersTitle: 'CANOPY',
-    mobilePointersLevel: 'Back End Dev',
-    mobilePointersYear: '2015',
-    mobileDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    mobileFeaturedImage: './images/Snapshoot Portfolio.png',
-    mobileTechnologies: ['html', 'css', 'javascript'],
+    name: 'Space Traveler&lsquo;s Hub',
+    pointersTitle: 'SPACE X',
+    pointersLevel: 'Front End Dev',
+    pointersYear: '2023',
+    description: 'Space Traveller hub-app is based on data from Space X&lsquo;s API. The Space Travelers&lsquo;s Hub App displays a list of available rockets on its homepage and a list of missions on its mission page. Both lists options can be booked and reserved, and the reserved rocket or mission shows on the profile page. Built with React and Redux.',
+    featuredImage: './images/Group 4.png',
+    mobileImage: './images/Group 4 m.png',
+    technologies: ['HTML5', 'CSS3', 'React', 'Redux'],
+    linkToLiveVersion: 'https://spacetravelerhub.onrender.com/',
+    linkToSource: 'https://github.com/shegy28/spacetravellerhub-app',
+    mobileName: 'Space Traveler&lsquo;s Hub',
+    mobilePointersTitle: 'SPACE X',
+    mobilePointersLevel: 'Front End Dev',
+    mobilePointersYear: '2023',
+    mobileDescription: 'spacetravellerhub-app is based on data from Space X&lsquo;s API. The Space Travelers&lsquo;s Hub App displays a list of available rockets on its homepage and a list of missions on its mission page. Both lists options can be booked and reserved, and the reserved rocket or mission shows on the profile page. Built with React and Redux.',
+    mobileFeaturedImage: './images/Group 4 m.png',
+    mobileTechnologies: ['HTML5', 'CSS3', 'React', 'Redux'],
     mobileLinkToLiveVersion: '#!',
     mobileLinkToSource: '#!',
 
   },
 
   {
-    name: 'Multi-Post Stories',
-    pointersTitle: 'FACEBOOK',
+    name: 'MoneyWise',
+    pointersTitle: 'RAILS API',
     pointersLevel: 'Full Stack Dev',
-    pointersYear: '2015',
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    featuredImage: './images/second desktop.png',
-    technologies: ['html', 'css', 'Ruby on rails', 'javascript'],
-    linkToLiveVersion: '#!',
-    linkToSource: '#!',
-    mobileName: 'Multi-Post Stories',
-    mobilePointersTitle: 'CANOPY',
+    pointersYear: '2023',
+    description: 'A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. Built with Ruby on Rails.',
+    featuredImage: './images/bugg.png',
+    technologies: ['Ruby', 'Rails', 'SQL'],
+    linkToLiveVersion: 'https://moneywise-vzr4.onrender.com/',
+    linkToSource: 'https://github.com/shegy28/budget-app',
+    mobileName: 'MoneyWise',
+    mobilePointersTitle: 'RAILS API',
     mobilePointersLevel: 'Back End Dev',
-    mobilePointersYear: '2015',
-    mobileDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    mobileFeaturedImage: './images/Snapshoot Portfolio (1).png',
+    mobilePointersYear: '2023',
+    mobileDescription: 'A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. Built with Ruby on Rails.',
+    mobileFeaturedImage: './images/budget app mobile.png',
+    mobileTechnologies: ['Ruby', 'Rails', 'SQL'],
+    mobileLinkToLiveVersion: '#!',
+    mobileLinkToSource: '#!',
+  },
+
+  {
+    name: 'Fashion Week',
+    pointersTitle: 'CC',
+    pointersLevel: 'Front End Dev',
+    pointersYear: '2022',
+    description: 'A website that tell and shows more information about a fashion event that is held annually. Its main feature is that the speakers sections is loaded dynamically using Javascript. Built with HTML5, CSS3 and JavaScript',
+    featuredImage: './images/fas.png',
+    technologies: ['html', 'css', 'Ruby on rails', 'javascript'],
+    linkToLiveVersion: 'https://shegy28.github.io/Fashion-week/',
+    linkToSource: 'https://github.com/shegy28/Fashion-week',
+    mobileName: 'Fashion Week',
+    mobilePointersTitle: 'CC',
+    mobilePointersLevel: 'Front End Dev',
+    mobilePointersYear: '2022',
+    mobileDescription: 'A website that tell and shows more information about a fashion event that is held annually. Its main feature is that the speakers sections is loaded dynamically using Javascript. Built with HTML5, CSS3 and JavaScript',
+    mobileFeaturedImage: './images/fas mobile.png',
     mobileTechnologies: ['html', 'css', 'javascript'],
     mobileLinkToLiveVersion: '#!',
     mobileLinkToSource: '#!',
   },
 
   {
-    name: 'Facebook 360',
-    pointersTitle: 'FACEBOOK',
-    pointersLevel: 'Full Stack Dev',
-    pointersYear: '2015',
-    description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    featuredImage: './images/third desktop card.png',
-    technologies: ['html', 'css', 'Ruby on rails', 'javascript'],
-    linkToLiveVersion: '#!',
-    linkToSource: '#!',
-    mobileName: 'Tonic',
-    mobilePointersTitle: 'CANOPY',
-    mobilePointersLevel: 'Back End Dev',
-    mobilePointersYear: '2015',
-    mobileDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    mobileFeaturedImage: './images/Snapshoot Portfolio (2).png',
-    mobileTechnologies: ['html', 'css', 'javascript'],
-    mobileLinkToLiveVersion: '#!',
-    mobileLinkToSource: '#!',
-  },
-
-  {
-    name: 'Uber Navigation',
-    pointersTitle: 'Uber',
-    pointersLevel: 'Lead Developer',
-    pointersYear: '2018',
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    featuredImage: './images/fourth desktop.png',
-    technologies: ['html', 'css', 'Ruby on rails', 'javascript'],
-    linkToLiveVersion: '#!',
-    linkToSource: '#!',
-    mobileName: 'Multi-Post Stories',
-    mobilePointersTitle: 'CANOPY',
-    mobilePointersLevel: 'Back End Dev',
-    mobilePointersYear: '2015',
-    mobileDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    mobileFeaturedImage: './images/Snapshoot Portfolio (3).png',
-    mobileTechnologies: ['html', 'css', 'javascript'],
+    name: 'Crypto App',
+    pointersTitle: 'API',
+    pointersLevel: 'Front End Dev',
+    pointersYear: '2023',
+    description: 'Stay informed with our mobile app that gathers and presents real time cryptocurrency market data. Get up-to-the-minute updates on significant cryptocurrencies, including prices, market valuations, and ranks. Crafted with React and Redux.',
+    featuredImage: './images/cryp d.png',
+    technologies: ['HTML5', 'CSS3', 'React', 'Redux'],
+    linkToLiveVersion: 'https://crypto-metrics-webapp.onrender.com/',
+    linkToSource: 'https://github.com/shegy28/crypto-metrics-Webapp',
+    mobileName: 'Crypto App',
+    mobilePointersTitle: 'API',
+    mobilePointersLevel: 'Front End Dev',
+    mobilePointersYear: '2023',
+    mobileDescription: 'Stay informed with our mobile app that gathers and presents real time cryptocurrency market data. Get up-to-the-minute updates on significant cryptocurrencies, including prices, market valuations, and ranks. Crafted with React and Redux.',
+    mobileFeaturedImage: './images/cryp m.png',
+    mobileTechnologies: ['HTML5', 'CSS3', 'React', 'Redux'],
     mobileLinkToLiveVersion: '#!',
     mobileLinkToSource: '#!',
   },
@@ -143,7 +196,7 @@ for (let i = 0; i < projectDetails.length; i += 1) {
                 </div>
                 <div>
                     <button class="see-project" onclick="openPopup(${i})">
-                        <a href="#">See Project</a>
+                        <a>See Project</a>
                     </button>
                 </div>
             </div>
@@ -171,7 +224,7 @@ for (let i = 0; i < projectDetails.length; i += 1) {
                     </ul>
                 </div>
                 <div>
-                    <a href="#"  onclick="openPopup(${i})">
+                    <a  onclick="openPopup(${i})">
                         <button type="submit" class="see-project">
                         See Project
                         </button>
@@ -214,7 +267,7 @@ for (let i = 0; i < projectDetails.length; i += 1) {
                 </div>
                 <div>
                     <button class="see-project" onclick="openPopup(${i})">
-                        <a href="#">See Project</a>
+                        <a>See Project</a>
                     </button>
                 </div>
             </div>
@@ -245,7 +298,7 @@ for (let i = 0; i < projectDetails.length; i += 1) {
                     </ul>
                 </div>
                 <div>
-                    <a href="#" onclick="openPopup(${i})">
+                    <a onclick="openPopup(${i})">
                         <button type="submit" class="see-project">
                         See Project
                         </button>
@@ -307,13 +360,14 @@ function openPopup(index) {
                         </ul>
                     </div>
                     <div class="pop-button-div">
-                        <a href="#">
+                        <a href="${obj.linkToLiveVersion}">
                             <button type="submit" class="see-project pop-button">
                             See Live
                             <img src="./images/button Icon.png" alt="">
                             </button>
                         </a>
-                        <button type="submit" class="see-project pop-button">
+                        <a href="${obj.linkToSource}">
+                            <button type="submit" class="see-project pop-button">
                             See Source
                             <img src="./images/button Vector.png" alt="">
                             </button>
@@ -328,13 +382,14 @@ function openPopup(index) {
                         </ul>
                     </div>
                     <div class="pop-button-div">
-                        <a href="#">
+                        <a href="${obj.linkToLiveVersion}">
                             <button type="submit" class="see-project pop-button">
                             See Live
                             <img src="./images/button Icon.png" alt="">
                             </button>
                         </a>
-                        <button type="submit" class="see-project pop-button">
+                        <a href="${obj.linkToSource}">
+                            <button type="submit" class="see-project pop-button">
                             See Source
                             <img src="./images/button Vector.png" alt="">
                             </button>
