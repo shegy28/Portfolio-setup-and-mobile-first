@@ -1,3 +1,17 @@
+function targetBlank() {
+    // Get all the <a> tags on the page
+    var allLinks = document.querySelectorAll("a");
+  
+    // Loop through each <a> tag
+    for (var i = 0; i < allLinks.length; i++) {
+      // Add the target="_blank" attribute
+      allLinks[i].setAttribute("target", "_blank");
+    }
+}
+targetBlank();
+  
+
+
 function openNav() {
   document.getElementById('drop-down').style.width = '100%';
   document.getElementById('container').style.filter = 'blur(7px)';
@@ -312,6 +326,7 @@ for (let i = 0; i < projectDetails.length; i += 1) {
 /* End of project detail population when the pages loads */
 
 function openPopup(index) {
+    targetBlank()
   const obj = projectDetails[index];
   let tech = '';
   let mTech = '';
@@ -360,13 +375,13 @@ function openPopup(index) {
                         </ul>
                     </div>
                     <div class="pop-button-div">
-                        <a href="${obj.linkToLiveVersion}">
+                        <a href="${obj.linkToLiveVersion}" target="_blank">
                             <button type="submit" class="see-project pop-button">
                             See Live
                             <img src="./images/button Icon.png" alt="">
                             </button>
                         </a>
-                        <a href="${obj.linkToSource}">
+                        <a href="${obj.linkToSource}" target="_blank">
                             <button type="submit" class="see-project pop-button">
                             See Source
                             <img src="./images/button Vector.png" alt="">
@@ -382,13 +397,13 @@ function openPopup(index) {
                         </ul>
                     </div>
                     <div class="pop-button-div">
-                        <a href="${obj.linkToLiveVersion}">
+                        <a href="${obj.linkToLiveVersion}" target="_blank">
                             <button type="submit" class="see-project pop-button">
                             See Live
                             <img src="./images/button Icon.png" alt="">
                             </button>
                         </a>
-                        <a href="${obj.linkToSource}">
+                        <a href="${obj.linkToSource}" target="_blank">
                             <button type="submit" class="see-project pop-button">
                             See Source
                             <img src="./images/button Vector.png" alt="">
@@ -405,6 +420,7 @@ function openPopup(index) {
 
   document.getElementById('popup-section').style.display = 'block';
   document.getElementById('container').style.filter = 'blur(7px)';
+  targetBlank()
 }
 openPopup();
 
